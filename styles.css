@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  .quiz-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .quiz-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffe600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .btn {
+    background: #ffe600;
+    color: #1e3c72;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 230, 0, 0.5);
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .btn-grid .btn {
+    font-size: 1rem;
+  }
+  
+  .correct {
+    background: #28a745;
+    color: white;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.5);
+  }
+  
+  .wrong {
+    background: #dc3545;
+    color: white;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.5);
+  }
+  
+  #question {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .quiz-container {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .btn {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    #question {
+      font-size: 1rem;
+    }
+  }
+  
